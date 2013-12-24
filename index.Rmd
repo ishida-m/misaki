@@ -40,7 +40,7 @@ mode        : selfcontained # {standalone, draft}
 .title-slide {
      background-image: url(assets/img/misaki.png);
      background-repeat: no-repeat ;
-     background-position: right top;
+     background-position: right center;
    }
 </style>
 
