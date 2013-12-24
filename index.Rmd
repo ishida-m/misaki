@@ -24,16 +24,29 @@ mode        : selfcontained # {standalone, draft}
 1. Rのインストールと使い方
 2. 本書のサポートパッケージのインストールと使い方
 3. 因子分析入門
+4. 検定
 
+
+
+--- 
+
+## Rのインストール
+
+- Rはフリーの統計解析ソフトウェアです
+- まずは[ここからダウンロード](http://cran.ism.ac.jp/)しましょう
+- 利用されているOSごとにリンクをたどります
+![ダウンロード](img/download.png)
+- インストールはダブルクリックするだけです．なにも考えず「次へ/OK」を押していきましょう
+
+---
+
+## 使ってみる
+
+- Windowsの場合はデスクトップにRとデザインされたアイコンが現われます．二つある場合どっちを使っても構いません
+- Macの場合は「アプリケーション」フォルダにRアイコンがあります
 
 
 --- .class #id 
-
-## Slide 2
-
---- bg:url(assets/img/misaki.png)
-
-## Slide3
 
 
 <style>
@@ -43,4 +56,3 @@ mode        : selfcontained # {standalone, draft}
      background-position: right center;
    }
 </style>
-
