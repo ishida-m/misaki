@@ -12,7 +12,7 @@ mode        : selfcontained # {standalone, draft}
 
 ## はじめに
 
-1. Edit YAML front matter
+1. 『因子分析大作戦』
 2. Write using R Markdown
 3. Use an empty line followed by three dashes to separate slides!
 
