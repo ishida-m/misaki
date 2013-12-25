@@ -18,6 +18,8 @@ mode        : selfcontained # {standalone, draft}
 
 本サイトは『とある弁当屋のデータサイエンティスト2 -- 因子分析大作戦--』共立出版のサポートサイトです。
 
+なお以降のページからこのページ(目次)に戻るには美咲の画像をクリックします
+
 
 *** right
 
@@ -30,9 +32,19 @@ mode        : selfcontained # {standalone, draft}
 
 
 
---- &logo2
+<style>
+.title-slide {
+     background-image: url(assets/img/misaki.png);
+     background-repeat: no-repeat ;
+     background-position: right center;
+   }
+</style>
 
-## Rのインストール
+
+
+--- &nologo
+
+## Rのインストールと使い方
 
 *** left 
 - Rはフリーの統計解析ソフトウェアです
@@ -47,7 +59,6 @@ mode        : selfcontained # {standalone, draft}
 
 <img src="img//install.png" alt="install" style="width: 320px;"/>
 
-[目次に戻る](#2)
 
 --- &logo
 
@@ -56,6 +67,8 @@ mode        : selfcontained # {standalone, draft}
 *** left
 
 - Windowsの場合はデスクトップにRとデザインされたアイコンが現われます．二つある場合どっちを使っても構いません
+![windows](img/icon.png)
+
 - Macの場合は「アプリケーション」フォルダにRアイコンがあります
 
 *** right
@@ -67,8 +80,69 @@ mode        : selfcontained # {standalone, draft}
 <img src="img/pi.png" alt="Pi" style="width: 320px;"/>
 
 
+--- &logo
 
---- &test bg:white
+## 本書のパッケージを導入
+
+*** left 
+
+それでは，本書の内容をRで確認できるパッケージを導入します
+
+Rのコンソールで>の右に次のように入力してEnterを押します
+
+    install.packages("Misaki",repos="http://rmecab.jp/R")
+
+*** right
+
+<!-- 実行すると「CRANのサイトを選べ」というダイアログが表示されます -->
+
+<!-- 三つあるJapanから一つを選んでOKを押します -->
+
+「パッケージ用のフォルダを作成するか？」と尋ねられたらOKを押します
+
+実行後，R コンソールで以下のように入力してEnterを押すと，パッケージが利用できるようになります
+(Misakiパッケージをロードすると言います)
+
+    library (Misaki)
+
+Rを起動して，本書付録パッケージを利用する場合は，最初にこの命令を1回実行します(入力してEnterをおします)
+
+--- &logo
+
+## 本書のパッケージの利用
+
+*** left
+
+Rを起動し，Misakiパッケージをロードしたら，次のように実行すると，各章に対応した内容が表示されます
+
+    demo(chap1)
+    
+あとは画面の指示通りに操作していきましょう
+
+ちなみ2章の内容であれば次のように実行します
+
+    demo(chap2)
+
+
+3章以降についても，数字の部分を変更して実行します
+
+*** right
+
+### 以上でRと本書パッケージの導入は完了です
+
+各章の内容については，[ここ](http://rmecab.jp/misaki)を参照してください
+
+<!-- 最後にこのスライドもRで作成しています -->
+
+<!-- slidifyとknitrというRの機能を使っています -->
+
+
+
+
+
+
+
+--- &twocol2 bg:yellow
 
 *** left
 
@@ -78,16 +152,6 @@ this is [link to slide2](#2)
 
 *** right
 
-kokoko iroiro kaki
-
-
-<style>
-.title-slide {
-     background-image: url(assets/img/misaki.png);
-     background-repeat: no-repeat ;
-     background-position: right center;
-   }
-</style>
 
 
 <!-- --- &anchor -->
@@ -101,26 +165,4 @@ kokoko iroiro kaki
 <!-- http://masaboo.cside.com/new_css1/cs_menu.html -->
 <!-- 
 (shell-command "Rscript ~/Projects/R/Markdown/slidify.R")
--->
-
-hoge
-
-*** right
-
-hoge
-
-
-<style>
-.title-slide {
-     background-image: url(assets/img/misaki.png);
-     background-repeat: no-repeat ;
-     background-position: right center;
-   }
-</style>
-
-<!-- http://masaboo.cside.com/new_css1/cs_03.htm -->
-<!-- (+ 1 2) -->
-
-<!-- 
-(shell-command "Rscript ~/Projects/R/Markdown/slidify.R") 
 -->

@@ -49,6 +49,8 @@
     <div class='left' style='float:left;width:48%'>
      <p>本サイトは『とある弁当屋のデータサイエンティスト2 -- 因子分析大作戦--』共立出版のサポートサイトです。</p>
 
+<p>なお以降のページからこのページ(目次)に戻るには美咲の画像をクリックします</p>
+
 
     </div>    
     <div class='right' style='float:right;width:48%'>
@@ -61,16 +63,24 @@
 <li>検定</li>
 </ol>
 
+<style>
+.title-slide {
+     background-image: url(assets/img/misaki.png);
+     background-repeat: no-repeat ;
+     background-position: right center;
+   }
+</style>
+
     </div>
 <footer class = 'logo'>
       <br>
-      <a href="#2"><img src = 'assets/img/misaki0.png'></img></a>
+      <a href="#2"><img src = 'assets/img/misaki0.png' alt = 'back to index'></img></a>
     </footer>
   </article>
 </slide>
       <slide class="" id="slide-2">
   <hgroup>
-    <h2>Rのインストール</h2>
+    <h2>Rのインストールと使い方</h2>
   </hgroup>
   <article>
     <hr noshade size=4 color='green'>  
@@ -93,8 +103,6 @@
 
 <p><img src="img//install.png" alt="install" style="width: 320px;"/></p>
 
-<p><a href="#2">目次に戻る</a></p>
-
     </div>
   </article>
 </slide>
@@ -107,8 +115,9 @@
       
     <div class='left' style='float:left;width:48%'>
      <ul>
-<li>Windowsの場合はデスクトップにRとデザインされたアイコンが現われます．二つある場合どっちを使っても構いません</li>
-<li>Macの場合は「アプリケーション」フォルダにRアイコンがあります</li>
+<li><p>Windowsの場合はデスクトップにRとデザインされたアイコンが現われます．二つある場合どっちを使っても構いません
+<img src="img/icon.png" alt="windows"></p></li>
+<li><p>Macの場合は「アプリケーション」フォルダにRアイコンがあります</p></li>
 </ul>
 
 
@@ -125,11 +134,90 @@
     </div>
 <footer class = 'logo'>
       <br>
-      <a href="#2"><img src = 'assets/img/misaki0.png'></img></a>
+      <a href="#2"><img src = 'assets/img/misaki0.png' alt = 'back to index'></img></a>
     </footer>
   </article>
 </slide>
-      <slide class="" id="slide-4" style="background:white;">
+      <slide class="" id="slide-4">
+  <hgroup>
+    <h2>本書のパッケージを導入</h2>
+  </hgroup>
+  <article>
+    <hr noshade size=4 color='green'>  
+      
+    <div class='left' style='float:left;width:48%'>
+     <p>それでは，本書の内容をRで確認できるパッケージを導入します</p>
+
+<p>Rのコンソールで&gt;の右に次のように入力してEnterを押します</p>
+
+<pre><code>install.packages(&quot;Misaki&quot;,repos=&quot;http://rmecab.jp/R&quot;)
+</code></pre>
+
+
+    </div>    
+    <div class='right' style='float:right;width:48%'>
+     <!-- 実行すると「CRANのサイトを選べ」というダイアログが表示されます -->
+
+<!-- 三つあるJapanから一つを選んでOKを押します -->
+
+<p>「パッケージ用のフォルダを作成するか？」と尋ねられたらOKを押します</p>
+
+<p>実行後，R コンソールで以下のように入力してEnterを押すと，パッケージが利用できるようになります
+(Misakiパッケージをロードすると言います)</p>
+
+<pre><code>library (Misaki)
+</code></pre>
+
+<p>Rを起動して，本書付録パッケージを利用する場合は，最初にこの命令を1回実行します(入力してEnterをおします)</p>
+
+    </div>
+<footer class = 'logo'>
+      <br>
+      <a href="#2"><img src = 'assets/img/misaki0.png' alt = 'back to index'></img></a>
+    </footer>
+  </article>
+</slide>
+      <slide class="" id="slide-5">
+  <hgroup>
+    <h2>本書のパッケージの利用</h2>
+  </hgroup>
+  <article>
+    <hr noshade size=4 color='green'>  
+      
+    <div class='left' style='float:left;width:48%'>
+     <p>Rを起動し，Misakiパッケージをロードしたら，次のように実行すると，各章に対応した内容が表示されます</p>
+
+<pre><code>demo(chap1)
+</code></pre>
+
+<p>あとは画面の指示通りに操作していきましょう</p>
+
+<p>ちなみ2章の内容であれば次のように実行します</p>
+
+<pre><code>demo(chap2)
+</code></pre>
+
+<p>3章以降についても，数字の部分を変更して実行します</p>
+
+
+    </div>    
+    <div class='right' style='float:right;width:48%'>
+     <h3>以上でRと本書パッケージの導入は完了です</h3>
+
+<p>各章の内容については，<a href="http://rmecab.jp/misaki">ここ</a>を参照してください</p>
+
+<!-- 最後にこのスライドもRで作成しています -->
+
+<!-- slidifyとknitrというRの機能を使っています -->
+
+    </div>
+<footer class = 'logo'>
+      <br>
+      <a href="#2"><img src = 'assets/img/misaki0.png' alt = 'back to index'></img></a>
+    </footer>
+  </article>
+</slide>
+      <slide class="" id="slide-6" style="background:yellow;">
   <hgroup>
     
   </hgroup>
@@ -145,17 +233,7 @@
     <img src="assets/img/misaki.png" alt="misaki"/>
     </div>    
     <div class='right' style='float:right;width:78%'>
-     <p>kokoko iroiro kaki</p>
-
-<style>
-.title-slide {
-     background-image: url(assets/img/misaki.png);
-     background-repeat: no-repeat ;
-     background-position: right center;
-   }
-</style>
-
-<!-- --- &anchor -->
+     <!-- --- &anchor -->
 
 <!-- *** left  -->
 
@@ -168,9 +246,6 @@
 <!-- 
 (shell-command "Rscript ~/Projects/R/Markdown/slidify.R")
 -->
-
-<p>hoge</p>
-
 
     </div>
   </article>
