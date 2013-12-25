@@ -52,7 +52,8 @@ mode        : selfcontained # {standalone, draft}
 *** right
 
 - 起動するとRconsoleという画面が現われます
-- 画面の > の右に命令を打ち込みます
+- 画面の > の右に命令を指示します
+- 例としてpiと入力してEnterを押しています
 
 <img src="img/pi.png" alt="Pi" style="width: 320px;"/>
 
@@ -70,4 +71,7 @@ hoge
    }
 </style>
 
-<!-- http://masaboo.cside.com/new_css1/cs_03.htmx -->
+<!-- http://masaboo.cside.com/new_css1/cs_03.htm -->
+<!-- (+ 1 2) -->
+
+<!-- (shell-command "") -->
