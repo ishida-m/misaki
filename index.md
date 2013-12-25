@@ -9,9 +9,10 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 
+
 --- &logo
 
-## はじめに
+## はじめに 
 
 *** left 
 
@@ -29,18 +30,26 @@ mode        : selfcontained # {standalone, draft}
 
 
 
---- &logo
+--- &logo2
 
 ## Rのインストール
 
+*** left 
 - Rはフリーの統計解析ソフトウェアです
 - まずは[ここからダウンロード](http://cran.ism.ac.jp/)しましょう
 - 利用されているOSごとにリンクをたどります
+
 ![ダウンロード](img/download.png)
+
+*** right 
+
 - インストールはダブルクリックするだけです．なにも考えず「次へ/OK」を押していきましょう
 
+<img src="img//install.png" alt="install" style="width: 320px;"/>
 
---- &logo2
+[目次に戻る](#2)
+
+--- &logo
 
 ## 使ってみる
 
@@ -59,9 +68,47 @@ mode        : selfcontained # {standalone, draft}
 
 
 
---- &test bg:green 
+--- &test bg:white
+
+*** left
+
+this is [link to slide1](#1)
+
+this is [link to slide2](#2)
+
+*** right
+
+kokoko iroiro kaki
+
+
+<style>
+.title-slide {
+     background-image: url(assets/img/misaki.png);
+     background-repeat: no-repeat ;
+     background-position: right center;
+   }
+</style>
+
+
+<!-- --- &anchor -->
+
+<!-- *** left  -->
+
+<!-- [目次に戻る](#2) -->
+
+<!-- *** right  -->
+
+<!-- http://masaboo.cside.com/new_css1/cs_menu.html -->
+<!-- 
+(shell-command "Rscript ~/Projects/R/Markdown/slidify.R")
+-->
 
 hoge
+
+*** right
+
+hoge
+
 
 <style>
 .title-slide {
@@ -74,4 +121,6 @@ hoge
 <!-- http://masaboo.cside.com/new_css1/cs_03.htm -->
 <!-- (+ 1 2) -->
 
-<!-- (shell-command "") -->
+<!-- 
+(shell-command "Rscript ~/Projects/R/Markdown/slidify.R") 
+-->
