@@ -8,7 +8,8 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
---- &slide
+
+--- &logo
 
 ## はじめに
 
@@ -28,7 +29,7 @@ mode        : selfcontained # {standalone, draft}
 
 
 
---- 
+--- &logo
 
 ## Rのインストール
 
@@ -38,16 +39,28 @@ mode        : selfcontained # {standalone, draft}
 ![ダウンロード](img/download.png)
 - インストールはダブルクリックするだけです．なにも考えず「次へ/OK」を押していきましょう
 
----
+
+--- &logo2
 
 ## 使ってみる
+
+*** left
 
 - Windowsの場合はデスクトップにRとデザインされたアイコンが現われます．二つある場合どっちを使っても構いません
 - Macの場合は「アプリケーション」フォルダにRアイコンがあります
 
+*** right
 
---- .class #id 
+- 起動するとRconsoleという画面が現われます
+- 画面の > の右に命令を打ち込みます
 
+<img src="img/pi.png" alt="Pi" style="width: 320px;"/>
+
+
+
+--- &test bg:green 
+
+hoge
 
 <style>
 .title-slide {
@@ -56,3 +69,5 @@ mode        : selfcontained # {standalone, draft}
      background-position: right center;
    }
 </style>
+
+<!-- http://masaboo.cside.com/new_css1/cs_03.htmx -->
