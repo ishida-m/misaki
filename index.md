@@ -119,7 +119,7 @@ Rを起動し，Misakiパッケージをロードしたら，次のように実�
     
 あとは画面の指示通りに操作していきましょう
 
-ちなみ2章の内容であれば次のように実行します
+ちなみ2章の内容であれば次のように数字部分を変更して実行します
 
     demo(chap2)
 
@@ -142,15 +142,15 @@ Rを起動し，Misakiパッケージをロードしたら，次のように実�
 
 
 
---- &twocol2 bg:yellow
+<!-- --- &twocol2 bg:yellow -->
 
-*** left
+<!-- *** left -->
 
-this is [link to slide1](#1)
+<!-- this is [link to slide1](#1) -->
 
-this is [link to slide2](#2)
+<!-- this is [link to slide2](#2) -->
 
-*** right
+<!-- *** right -->
 
 
 
