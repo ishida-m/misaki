@@ -4,7 +4,7 @@
   <title>因子分析大作戦</title>
   <meta charset="utf-8">
   <meta name="description" content="因子分析大作戦">
-  <meta name="author" content="石田基広">
+  <meta name="author" content="石田基広 ： ： 矢印キーを使ってスライドを進めてください →">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -34,7 +34,7 @@
       <hgroup class="auto-fadein">
         <h1>因子分析大作戦</h1>
         <h2>とある弁当屋の統計技師(データサイエンティスト) 2</h2>
-        <p>石田基広<br/></p>
+        <p>石田基広 ： ： 矢印キーを使ってスライドを進めてください →<br/></p>
       </hgroup>
           </slide>
 
@@ -47,7 +47,7 @@
     <hr noshade size=4 color='green'>  
       
     <div class='left' style='float:left;width:48%'>
-     <p>本サイトは『とある弁当屋のデータサイエンティスト2 -- 因子分析大作戦--』共立出版のサポートサイトです。</p>
+     <p>本サイトは『とある弁当屋のデータサイエンティスト2 -- 因子分析大作戦--』共立出版の付録サイトです</p>
 
 <p>なお以降のページからこのページ(目次)に戻るには美咲の画像をクリックします</p>
 
@@ -58,9 +58,8 @@
 
 <ol>
 <li>Rのインストールと使い方</li>
-<li>本書のサポートパッケージのインストールと使い方</li>
-<li>因子分析入門</li>
-<li>検定</li>
+<li>本書のパッケージを導入</li>
+<li>パッケージの使い方</li>
 </ol>
 
 <style>
@@ -98,7 +97,7 @@
     </div>    
     <div class='right' style='float:right;width:48%'>
      <ul>
-<li>インストールはダブルクリックするだけです．なにも考えず「次へ/OK」を押していきましょう</li>
+<li>インストールはダブルクリックするだけです。なにも考えず「次へ/OK」を押していきましょう</li>
 </ul>
 
 <p><img src="img//install.png" alt="install" style="width: 320px;"/></p>
@@ -115,7 +114,7 @@
       
     <div class='left' style='float:left;width:48%'>
      <ul>
-<li><p>Windowsの場合はデスクトップにRとデザインされたアイコンが現われます．二つある場合どっちを使っても構いません
+<li><p>Windowsの場合はデスクトップにRとデザインされたアイコンが現われます。二つある場合どっちを使っても構いません
 <img src="img/icon.png" alt="windows"></p></li>
 <li><p>Macの場合は「アプリケーション」フォルダにRアイコンがあります</p></li>
 </ul>
@@ -146,7 +145,7 @@
     <hr noshade size=4 color='green'>  
       
     <div class='left' style='float:left;width:48%'>
-     <p>それでは，本書の内容をRで確認できるパッケージを導入します</p>
+     <p>それでは、本書の内容をRで確認できるパッケージを導入します</p>
 
 <p>Rのコンソールで&gt;の右に次のように入力してEnterを押します</p>
 
@@ -162,13 +161,13 @@
 
 <p>「パッケージ用のフォルダを作成するか？」と尋ねられたらOKを押します</p>
 
-<p>実行後，R コンソールで以下のように入力してEnterを押すと，パッケージが利用できるようになります
+<p>実行後、R コンソールで以下のように入力してEnterを押すと、パッケージが利用できるようになります
 (Misakiパッケージをロードすると言います)</p>
 
 <pre><code>library (Misaki)
 </code></pre>
 
-<p>Rを起動して，本書付録パッケージを利用する場合は，最初にこの命令を1回実行します(入力してEnterをおします)</p>
+<p>Rを起動して、本書付録パッケージを利用する場合は、最初にこの命令を1回実行します(入力してEnterをおします)</p>
 
     </div>
 <footer class = 'logo'>
@@ -185,26 +184,34 @@
     <hr noshade size=4 color='green'>  
       
     <div class='left' style='float:left;width:48%'>
-     <p>Rを起動し，Misakiパッケージをロードしたら，次のように実行すると，各章に対応した内容が表示されます</p>
+     <p>Rを起動し、Misakiパッケージをロードしたら、次のように実行すると、1章から3章に対応した内容が表示されます</p>
 
-<pre><code>demo(chap1)
+<pre><code>demo(part1)
 </code></pre>
 
 <p>あとは画面の指示通りに操作していきましょう</p>
 
-<p>ちなみ2章の内容であれば次のように数字部分を変更して実行します</p>
+<!-- ちなみ4-5章の内容であれば次のように数字部分を変更して実行します -->
 
-<pre><code>demo(chap2)
-</code></pre>
+<!--     demo(part2) -->
 
-<p>3章以降についても，数字の部分を変更して実行します</p>
+<!-- 6-7章以降についても、数字の部分を変更して実行します -->
+
+<!--     demo(part3) -->
 
 
     </div>    
     <div class='right' style='float:right;width:48%'>
      <h3>以上でRと本書パッケージの導入は完了です</h3>
 
-<p>各章の内容については，<a href="http://rmecab.jp/misaki">ここ</a>を参照してください</p>
+<p>後日、改めてRを起動し、Misakiパッケージを再び利用する場合は、最初に以下を実行します</p>
+
+<pre><code>library (Misaki)
+</code></pre>
+
+<p>疑問があれば<a href="mailto:ishida.motohiro@tokushima-u.ac.jp">メール</a>をお送りください</p>
+
+<!-- 各章の内容については、[ここ](http://rmecab.jp/misaki)を参照してください -->
 
 <!-- 最後にこのスライドもRで作成しています -->
 
@@ -214,7 +221,7 @@
 
 <!-- *** left -->
 
-<!-- this is [link to slide1](#1) -->
+<!-- \this is [link to slide1](#1) -->
 
 <!-- this is [link to slide2](#2) -->
 
@@ -231,7 +238,7 @@
 <!-- http://masaboo.cside.com/new_css1/cs_menu.html -->
 
 <!-- 
-(shell-command "Rscript ~/Projects/R/Markdown/slidify.R")
+(shell-command "Rscript ~/Dropbox/R/Kyoritsu/IntroStats2/slides/misaki.R")
 -->
 
     </div>

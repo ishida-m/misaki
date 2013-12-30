@@ -1,7 +1,7 @@
 --- 
 title       : 因子分析大作戦
 subtitle    : とある弁当屋の統計技師(データサイエンティスト) 2
-author      : 石田基広
+author      : 石田基広 ： ： 矢印キーを使ってスライドを進めてください →
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -16,7 +16,7 @@ mode        : selfcontained # {standalone, draft}
 
 *** left 
 
-本サイトは『とある弁当屋のデータサイエンティスト2 -- 因子分析大作戦--』共立出版のサポートサイトです。
+本サイトは『とある弁当屋のデータサイエンティスト2 -- 因子分析大作戦--』共立出版の付録サイトです
 
 なお以降のページからこのページ(目次)に戻るには美咲の画像をクリックします
 
@@ -26,9 +26,8 @@ mode        : selfcontained # {standalone, draft}
 ### コンテンツ
 
 1. Rのインストールと使い方
-2. 本書のサポートパッケージのインストールと使い方
-3. 因子分析入門
-4. 検定
+2. 本書のパッケージを導入
+3. パッケージの使い方
 
 
 
@@ -55,7 +54,7 @@ mode        : selfcontained # {standalone, draft}
 
 *** right 
 
-- インストールはダブルクリックするだけです．なにも考えず「次へ/OK」を押していきましょう
+- インストールはダブルクリックするだけです。なにも考えず「次へ/OK」を押していきましょう
 
 <img src="img//install.png" alt="install" style="width: 320px;"/>
 
@@ -66,7 +65,7 @@ mode        : selfcontained # {standalone, draft}
 
 *** left
 
-- Windowsの場合はデスクトップにRとデザインされたアイコンが現われます．二つある場合どっちを使っても構いません
+- Windowsの場合はデスクトップにRとデザインされたアイコンが現われます。二つある場合どっちを使っても構いません
 ![windows](img/icon.png)
 
 - Macの場合は「アプリケーション」フォルダにRアイコンがあります
@@ -86,7 +85,7 @@ mode        : selfcontained # {standalone, draft}
 
 *** left 
 
-それでは，本書の内容をRで確認できるパッケージを導入します
+それでは、本書の内容をRで確認できるパッケージを導入します
 
 Rのコンソールで>の右に次のように入力してEnterを押します
 
@@ -100,12 +99,12 @@ Rのコンソールで>の右に次のように入力してEnterを押します
 
 「パッケージ用のフォルダを作成するか？」と尋ねられたらOKを押します
 
-実行後，R コンソールで以下のように入力してEnterを押すと，パッケージが利用できるようになります
+実行後、R コンソールで以下のように入力してEnterを押すと、パッケージが利用できるようになります
 (Misakiパッケージをロードすると言います)
 
     library (Misaki)
 
-Rを起動して，本書付録パッケージを利用する場合は，最初にこの命令を1回実行します(入力してEnterをおします)
+Rを起動して、本書付録パッケージを利用する場合は、最初にこの命令を1回実行します(入力してEnterをおします)
 
 --- &logo
 
@@ -113,24 +112,33 @@ Rを起動して，本書付録パッケージを利用する場合は，最初�
 
 *** left
 
-Rを起動し，Misakiパッケージをロードしたら，次のように実行すると，各章に対応した内容が表示されます
+Rを起動し、Misakiパッケージをロードしたら、次のように実行すると、1章から3章に対応した内容が表示されます
 
-    demo(chap1)
+    demo(part1)
     
 あとは画面の指示通りに操作していきましょう
 
-ちなみ2章の内容であれば次のように数字部分を変更して実行します
+<!-- ちなみ4-5章の内容であれば次のように数字部分を変更して実行します -->
 
-    demo(chap2)
+<!--     demo(part2) -->
 
 
-3章以降についても，数字の部分を変更して実行します
+<!-- 6-7章以降についても、数字の部分を変更して実行します -->
+
+<!--     demo(part3) -->
 
 *** right
 
 ### 以上でRと本書パッケージの導入は完了です
 
-各章の内容については，[ここ](http://rmecab.jp/misaki)を参照してください
+後日、改めてRを起動し、Misakiパッケージを再び利用する場合は、最初に以下を実行します
+
+    library (Misaki)
+
+
+疑問があれば[メール](mailto:ishida.motohiro@tokushima-u.ac.jp)をお送りください
+
+<!-- 各章の内容については、[ここ](http://rmecab.jp/misaki)を参照してください -->
 
 <!-- 最後にこのスライドもRで作成しています -->
 
@@ -146,7 +154,7 @@ Rを起動し，Misakiパッケージをロードしたら，次のように実�
 
 <!-- *** left -->
 
-<!-- this is [link to slide1](#1) -->
+<!-- \this is [link to slide1](#1) -->
 
 <!-- this is [link to slide2](#2) -->
 
@@ -164,5 +172,5 @@ Rを起動し，Misakiパッケージをロードしたら，次のように実�
 
 <!-- http://masaboo.cside.com/new_css1/cs_menu.html -->
 <!-- 
-(shell-command "Rscript ~/Projects/R/Markdown/slidify.R")
+(shell-command "Rscript ~/Dropbox/R/Kyoritsu/IntroStats2/slides/misaki.R")
 -->
