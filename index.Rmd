@@ -10,6 +10,20 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 
 
+
+--- &twocol2
+
+## お願い
+
+
+*** right
+
+- 左右が切れて表示される場合
+- ブラウザの表示サイズを調整します
+- Ctrlキーを押しながらマイナスキー
+- を押して調整してください
+
+
 --- &logo
 
 ## はじめに 
